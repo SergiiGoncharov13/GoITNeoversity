@@ -1,4 +1,3 @@
-from datetime import date
 from classes_for_bot import AddressBook, Record
 
 USERS = AddressBook()
@@ -64,10 +63,6 @@ def show_birthday(args):
     return f"{user}: {birthday}"
 
 @error_handler
-def get_birthdays_per_week():
-    pass
-
-@error_handler
 def save_address_book(*_):
     return USERS.save_to_file()
 
@@ -92,10 +87,8 @@ HANDLERS = {
     "phone": show_phone,
     "add-birthday": add_birthday,
     "show-birthday": show_birthday,
-    "birthdays": get_birthdays_per_week, 
     "save": save_address_book,
     "load": load_address_book
-
 }
 
 

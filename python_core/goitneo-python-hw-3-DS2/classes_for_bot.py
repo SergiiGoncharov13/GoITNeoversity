@@ -38,7 +38,7 @@ class Birthday(Field):
     @Field.value.setter
     def value(self, value):
         today = datetime.now().date()
-        birth_date = datetime.strptime(value, "%d-%m-%Y").date() # "%d-%m-%Y"   '%Y-%m-%d'
+        birth_date = datetime.strptime(value, "%d-%m-%Y").date() 
         if birth_date > today:
             raise ValueError("Wrong input")
         self._value = value
