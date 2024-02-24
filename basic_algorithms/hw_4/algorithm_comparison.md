@@ -8,16 +8,16 @@
 | Timsort              |              0.00003 |              0.00042 |              0.00784 |
 
    
-    data_small = 100
-    data_medium = 1_000
-    data_large = 10_000
-    Кількість повтору = 10
+- data_small = 100 
+- data_medium = 1_000
+- data_large = 10_000
+- Кількість повтору = 10
 
-Часові складності алгоритмів:
-    Insertion Sort    O(n^2)
-    Merge Sort  O(n * log n)
-    Timsorted O(n * log n)
-    Timsort O(n * log n)
+##### Часові складності алгоритмів:
+- Insertion Sort    O(n^2)
+- Merge Sort  O(n * log n)
+- Timsorted O(n * log n)
+- Timsort O(n * log n)
 
 Відповідно до часовою складності алгоритму  Insertion Sort  має найбільший час виконання 10.19887. 
 Merge Sort вже має набагато меньший час виконання 0.14106
