@@ -32,9 +32,10 @@ class HashTable:
     def delete(self, key):
         key_hash = self.hash_function(key)
         if self.table[key_hash] is not None:
-            for i, pair in enumerate(self.table[key_hash]):
+            for pair in self.table[key_hash]:
                 if pair[0] == key:
-                    return pair[1]
+                    self.table[key_hash].remove(pair)
+                    return True
         return None
 
 
