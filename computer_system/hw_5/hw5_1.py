@@ -37,5 +37,6 @@ async def main():
 
     await read_folder(source_folder, destination_folder)
 
+
 if __name__ == "__main__":
     asyncio.run(main())
